@@ -1,4 +1,4 @@
-package atm;
+package atmNoneSpring;
 
 public class Main {
     public static void main(String[] args) {

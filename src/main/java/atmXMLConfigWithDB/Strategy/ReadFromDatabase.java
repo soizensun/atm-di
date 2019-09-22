@@ -1,4 +1,6 @@
-package atmXMLConfigWithDB;
+package atmXMLConfigWithDB.Strategy;
+
+import atmXMLConfigWithDB.Model.Customer;
 
 import java.io.IOException;
 import java.sql.*;

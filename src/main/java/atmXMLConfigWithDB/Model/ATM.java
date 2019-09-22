@@ -1,4 +1,4 @@
-package atmXMLConfigWithDB;
+package atmXMLConfigWithDB.Model;
 
 import java.io.IOException;
 

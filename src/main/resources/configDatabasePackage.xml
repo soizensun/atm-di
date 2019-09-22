@@ -4,28 +4,26 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
 
     <!--change mode in this constructor-->
-    <bean id="Bank" class="atmXMLConfigWithDB.Bank">
+    <bean id="Bank" class="atmXMLConfigWithDB.Model.Bank">
         <constructor-arg ref="ReadFromDatabaseJDBC"/>
     </bean>
 
-    <bean id="ReadFromDatabase" class="atmXMLConfigWithDB.ReadFromDatabase">
-    </bean>
-    <bean id="ReadFromFile" class="atmXMLConfigWithDB.ReadFromFile">
+    <!--mode-->
+    <bean id="ReadFromDatabase" class="atmXMLConfigWithDB.Strategy.ReadFromDatabase"></bean>
+    <bean id="ReadFromFile" class="atmXMLConfigWithDB.Strategy.ReadFromFile">
         <constructor-arg value="customers.txt"/>
     </bean>
-    <bean id="ReadFromDatabaseJDBC" class="atmXMLConfigWithDB.ReadFromDatabaseJDBC">
+    <bean id="ReadFromDatabaseJDBC" class="atmXMLConfigWithDB.Strategy.ReadFromDatabaseJDBC"></bean>
 
-    </bean>
-
-    <bean id="ATM" class="atmXMLConfigWithDB.ATM">
+    <bean id="ATM" class="atmXMLConfigWithDB.Model.ATM">
         <constructor-arg ref="Bank"/>
     </bean>
-    <bean id="ATMSimulator" class="atmXMLConfigWithDB.ATMSimulator">
+    <bean id="ATMSimulator" class="atmXMLConfigWithDB.Model.ATMSimulator">
         <constructor-arg ref="ATM"/>
     </bean>
 
-
-    <bean id="customerDataAccessObjectImp" class="atmXMLConfigWithDB.CustomersDataAccessImprement">
+    <!--JDBC Beans-->
+    <bean id="customerDataAccessObjectImp" class="atmXMLConfigWithDB.JDBCConfig.CustomersDataAccessImprement">
         <constructor-arg ref="jdbcTemplate" />
     </bean>
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
@@ -36,4 +34,5 @@
         <property name="driverClassName" value="org.sqlite.JDBC" />
         <property name="url" value="jdbc:sqlite:customers.db" />
     </bean>
+
 </beans>

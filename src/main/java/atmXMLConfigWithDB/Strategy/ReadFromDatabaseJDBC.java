@@ -1,8 +1,10 @@
-package atmXMLConfigWithDB;
+package atmXMLConfigWithDB.Strategy;
 
+import atmXMLConfigWithDB.JDBCConfig.CustomerDataAccessObject;
+import atmXMLConfigWithDB.JDBCConfig.CustomersDataAccessImprement;
+import atmXMLConfigWithDB.Model.Customer;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.io.IOException;
 import java.util.HashMap;

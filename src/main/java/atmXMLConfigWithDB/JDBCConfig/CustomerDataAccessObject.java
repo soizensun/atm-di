@@ -1,4 +1,6 @@
-package atmXMLConfigWithDB;
+package atmXMLConfigWithDB.JDBCConfig;
+
+import atmXMLConfigWithDB.Model.Customer;
 
 import java.util.List;
 

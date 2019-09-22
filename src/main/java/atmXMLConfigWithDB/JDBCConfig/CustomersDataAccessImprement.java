@@ -1,5 +1,6 @@
-package atmXMLConfigWithDB;
+package atmXMLConfigWithDB.JDBCConfig;
 
+import atmXMLConfigWithDB.Model.Customer;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 

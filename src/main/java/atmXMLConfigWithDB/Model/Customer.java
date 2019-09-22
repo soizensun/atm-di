@@ -1,4 +1,4 @@
-package atmXMLConfigWithDB;
+package atmXMLConfigWithDB.Model;
 
 /**
  * A bank customer with a checking and a savings account.

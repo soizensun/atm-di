@@ -1,4 +1,6 @@
-package atmXMLConfigWithDB;
+package atmXMLConfigWithDB.Model;
+
+import atmXMLConfigWithDB.Strategy.ReadDataSource;
 
 import java.io.IOException;
 import java.util.HashMap;

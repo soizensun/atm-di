@@ -1,4 +1,4 @@
-package atmXMLConfigWithDB;
+package atmXMLConfigWithDB.Model;
 
 /**
  * A bank account has a balance that can be changed by

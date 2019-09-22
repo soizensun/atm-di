@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class DataSource {
 
     private String filename;
-
     /**
      * @param filename the name of the customer file
      */

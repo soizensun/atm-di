@@ -36,6 +36,7 @@ public class ReadFromDatabase implements ReadDataSource {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        System.out.println(customers.toString());
         return customers;
     }
 }

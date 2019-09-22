@@ -42,4 +42,9 @@ public class Customer {
    public Account getAccount() {
       return account;
    }
+
+   @Override
+   public String toString() {
+      return this.getCustomerNumber() + "";
+   }
 }
